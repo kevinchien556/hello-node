@@ -12,12 +12,14 @@
 
 stack 先堆疊 readData(0)並呼叫 console.log 函數
 
-<br/>
+</br>
+</br>
 
 ![image](https://raw.githubusercontent.com/kevinchien556/picture/main/quiz1-2.png)
 
 印出 1 後 pop 掉 console.log(1)，再呼叫 console.log(2) 印出 2
 
+</br>
 </br>
 
 ![image](https://raw.githubusercontent.com/kevinchien556/picture/main/quiz1-3.png)
@@ -25,11 +27,13 @@ stack 先堆疊 readData(0)並呼叫 console.log 函數
 重複上面步驟印到 100 後，呼叫 if 內 readData(idx)函式，並繼續往上堆疊 console.log 函式
 
 </br>
+</br>
 
 ![image](https://raw.githubusercontent.com/kevinchien556/picture/main/quiz1-6.png)
 
 重複上一步驟四次後，又印出了 101~500，完成後在 stack 內由上往下 pop 掉所有的 readData，並 push console.log("after")
 
+</br>
 </br>
 
 ![image](https://raw.githubusercontent.com/kevinchien556/picture/main/quiz1-5.png)
@@ -51,24 +55,28 @@ stack 先堆疊 readData(0)並呼叫 console.log 函數
 和程式 1 一開始一樣，先印到 100 後欲執行 if 內 setTimeout 函式，但此函式為非同步程式，會丟給 webapis 處理
 
 <br/>
+</br>
 
 ![image](https://raw.githubusercontent.com/kevinchien556/picture/main/quiz2-2.png)
 
 丟給 webapis 後，readData(0)處理完成，從 stack 被 pop 掉，並 push console.log("after")。同時間 webapis 持續處理(倒數指定秒數)
 
 <br/>
+</br>
 
 ![image](https://raw.githubusercontent.com/kevinchien556/picture/main/quiz2-3.png)
 
 當 webapis 處理完成(倒數 0 秒後)，會將欲回傳的函式 readData(idx=100) 丟到 task queqe 內。但只要 stack 內還有程式在執行，task queqe 內的程式就不會被`event loop`丟回 stack 內處理。
 
 <br/>
+</br>
 
 ![image](https://raw.githubusercontent.com/kevinchien556/picture/main/quiz2-4.png)
 
 待印出 after 後，console.log("after")從 stack 被移除，因為 stack 內已無程式需處理，`event loop` 將 task queqe 內的 readData(idx=100)丟回 stack 執行。
 
 <br/>
+</br>
 
 ![image](https://raw.githubusercontent.com/kevinchien556/picture/main/quiz2-5.png)
 
