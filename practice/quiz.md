@@ -80,4 +80,4 @@ stack 先堆疊 readData(0)並呼叫 console.log 函數
 
 ![image](https://raw.githubusercontent.com/kevinchien556/picture/main/quiz2-5.png)
 
-和一開始一樣，印到 200 後又遇到 setTimeout 函式，一樣會丟給 webapi 處理。但此後 stack 內已無其他程式需要執行，因此待 webapi 處理完便會直接被`event loop`丟回 stack 處理。並重複這兩步驟接續印出 201 到 300 ，300 到 400，400 到 500。
+和一開始一樣，印到 200 後又遇到 setTimeout 函式，一樣會丟給 webapi 處理。但此後 stack 內已無其他程式需要執行，因此待 webapi 處理完便會直接被`event loop`丟回 stack 處理。並重複這兩步驟接續印出 201 到 300 ，301 到 400，401 到 500。
