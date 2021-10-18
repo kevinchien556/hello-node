@@ -1,5 +1,7 @@
 const fs = require("fs");
 
+// require:引入一個pakeage 或是lib 來使用
+
 
 // fs.readFile('input.txt',"utf-8",(err, data) => {
 //   if (err) {
