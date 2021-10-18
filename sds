@@ -1,0 +1,59 @@
+[33mcommit 7250399e1a89168b8c2813f976d75a2ab9bea622[m[33m ([m[1;36mHEAD -> [m[1;32mcrawler[m[33m, [m[1;31morigin/crawler[m[33m)[m
+Author: kevinchien556 <tamamacool@gmail.com>
+Date:   Sun Oct 17 15:39:46 2021 +0800
+
+    add db-await practice
+
+[33mcommit 8ef9a13b2e73a4b231688c87f9b2e88f7d8a7c32[m
+Author: kevinchien556 <tamamacool@gmail.com>
+Date:   Sun Oct 17 11:25:54 2021 +0800
+
+    add axios practice
+
+[33mcommit 1c3d2244a3768a5a679c9d24c8cd3146742947ac[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: kevinchien556 <tamamacool@gmail.com>
+Date:   Sat Oct 16 11:07:40 2021 +0800
+
+    practice promise
+
+[33mcommit b26046280d6e2962589c0c0c66a81318b5ddc410[m
+Author: kevinchien <tamamacool@gmail.com>
+Date:   Sun Oct 3 01:52:38 2021 +0800
+
+    update
+
+[33mcommit 85cd74da901181c73a358e3f0d58bf823a20b37e[m
+Author: kevinchien <tamamacool@gmail.com>
+Date:   Sun Oct 3 01:52:15 2021 +0800
+
+    update
+
+[33mcommit d9e24aa297be22d035550573e6c5f8eedf2e16ca[m
+Author: kevinchien <tamamacool@gmail.com>
+Date:   Sun Oct 3 01:35:56 2021 +0800
+
+    update
+
+[33mcommit 1324d1d2c39e56851c9697beece9f56389268a84[m
+Author: kevinchien <tamamacool@gmail.com>
+Date:   Sun Oct 3 01:34:21 2021 +0800
+
+    update
+
+[33mcommit 2640cd21c171846f82c213fad2a9458f13ad70d0[m
+Author: kevinchien <tamamacool@gmail.com>
+Date:   Sun Oct 3 01:31:44 2021 +0800
+
+    add quiz.md
+
+[33mcommit 59a0a9b1c87bf078aa18e46894d31277e4004d1f[m
+Author: kevinchien <tamamacool@gmail.com>
+Date:   Sun Sep 19 16:58:20 2021 +0800
+
+    add sum.js and insert function sum into it.
+
+[33mcommit 6f620a2ad5129249ef03096077f78cc79c2028ce[m
+Author: kevinchien556 <90980126+kevinchien556@users.noreply.github.com>
+Date:   Sun Sep 19 16:17:12 2021 +0800
+
+    Initial commit
