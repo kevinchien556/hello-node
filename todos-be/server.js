@@ -17,6 +17,12 @@ connection = Promise.promisifyAll(connection);
 
 let app = express(); // application
 
+const cors = require("cors");
+// let corsOptions = {
+//   origin: "*", //全部
+// };
+app.use(cors());
+
 app.use(express.static("static"));
 //localhost:3001/about.html
 
@@ -83,6 +89,25 @@ app.get("/member", (req, res) => {
 app.get("/api/todos", async (req, res) => {
   let data = await connection.queryAsync("SELECT * FROM todos");
   res.json(data);
+});
+
+// /api/todos/24
+// 根據id取得單筆資料
+app.get("/api/todos/:todoId", async (req, res) => {
+  // req.params.todoId
+  let data = await connection.queryAsync("SELECT * FROM todos WHERE id = ?", [
+    req.params.todoId,
+  ]);
+  // 直接把陣列回給前端的話
+  // res.json(data);
+  if (data.length > 0) {
+    res.json(data[0]);
+  } else {
+    // 空的
+    // /api/todos/44
+    // res.send(null);
+    res.status(404).send("Not Found");
+  }
 });
 
 // 職責切割
